@@ -2,5 +2,53 @@ body, html {
   width: 100%;
   height: 100%;
   margin: 0px;
+  background-color: aqua;
+}
+
+h1 {
+  text-align: center;
+  font-size: 60px;
+  color: pink;
+  text-shadow: 4px 4px black;
+}
+
+#main {
+  background-color: white;
+  width: 90%;
+  height: 70%;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-top: 5%;
+  border: 3px solid green;
+}
+
+#main form {
+  padding-top: 15%;
+  padding-bottom: 15%;
+}
+
+#submit {
+  margin: auto;
+  width: 90%;
+  border: 3px solid green;
+  padding-top: 10px;
+  text-align: center;
+}
+
+#submit label {
+  font-size: 40px;
+  margin: auto;
+}
+
+#submit input {
+  width: 100px;
+  height: 35px;
+  padding: 5px;
+}
+
+#submit button {
+  height: 50px;
+  width: 100px;
+  margin-bottom: 20px;
 }
 /*# sourceMappingURL=index.css.map */
