@@ -10,8 +10,19 @@ def index():
 @app.route("/main", methods = ["POST"])
 def main():
     number = request.form.get("number")
-    rando = random.randint(1,int(number))
-    return render_template("main.html", number=number, rando=rando)
+    prev = request.form.get("previous")
+    print(type(prev))
+    print(type(number))
+
+    rando = random.randint(1,12) 
+
+    if prev: 
+        while int(rando) == int(prev):
+            rando = random.randint(1,int(number))
+    answer = int(number) * rando
+
+    return render_template("main.html", number=number, rando=rando, answer=answer)
+
 
 if __name__ == "__main__":
     app.run(debug=True)

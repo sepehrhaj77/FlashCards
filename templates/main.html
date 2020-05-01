@@ -9,7 +9,7 @@
         <h1>Learn Multiplication!</h1>
 
         <div id="main">
-            <a href = "{{url_for('index')}}">Choose a new number</a>
+            <a id="back" href = "{{url_for('index')}}">Choose a new number</a>
             
             <div id="first" class="cards">
                 {{number}}
@@ -18,7 +18,18 @@
             <div id="second" class="cards">
                 {{rando}}
             </div>
+            <p>=</p>
+            <div id="answer" class="cards">
+                <span id="reveal">
+                    {{answer}}
+                </span>
+            </div>
 
+            <form id="hidden" action="{{url_for('main')}}" method="POST">
+                <input name="number" type="number" value="{{number}}">
+                <input name="previous" type="number" value="{{rando}}">
+                <button>Next One</button>
+            </form>
         </div>
     </body>
 </html>
