@@ -9,11 +9,11 @@
         <h1>Learn Multiplication!</h1>
 
         <div id="main">
-            <form action="main.html">
+            <form action="{{url_for('main')}}" method="POST">
                 <div id="submit">
                     <label> Enter a number from 1-12 to practice its times table: </label>   
                     <input name="number" type="number" placeholder="1-12">
-                    <button type="submit">Submit</button>
+                    <button>Submit</button>
                 </div>
             </form>
         </div>

@@ -4,12 +4,21 @@
         <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
         <title>Flash Cards!</title>
     </head>
-    
+
     <body>
         <h1>Learn Multiplication!</h1>
 
         <div id="main">
-            <a href = "index.html">Choose a new number</a>
+            <a href = "{{url_for('index')}}">Choose a new number</a>
+            
+            <div id="first" class="cards">
+                {{number}}
+            </div>
+            <p>X</p>
+            <div id="second" class="cards">
+                {{rando}}
+            </div>
+
         </div>
     </body>
 </html>

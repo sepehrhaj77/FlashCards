@@ -23,9 +23,23 @@ h1 {
 
 a {
   font-size: 20px;
+  float: left;
 }
 
 a:before {
   content: "\2190";
+}
+
+.cards {
+  width: 200px;
+  height: 200px;
+  background-color: orange;
+  margin-top: 100px;
+  float: left;
+  clear: left;
+}
+
+#second {
+  float: left;
 }
 /*# sourceMappingURL=main.css.map */

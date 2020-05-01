@@ -28,4 +28,18 @@ a{
     &:before{
         content: "\2190"
     }
+    float: left;
+}
+
+.cards{
+    width: 200px;
+    height: 200px;
+    background-color: orange;
+    margin-top: 100px;
+    float: left;
+    clear: left;
+}
+
+#second{
+    float: left;
 }
