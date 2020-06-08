@@ -6,13 +6,13 @@ body, html{
     width: 100%;
     height: 100%;
     margin: 0px;
-    background-color: aqua;
+    background-color: rgb(4, 73, 73);
 }
 
 h1{
     text-align: center;
     font-size: 60px;
-    color: pink;
+    color: rgb(236, 117, 137);
     text-shadow: $ts $ts black;  
 }
 #main{
@@ -41,7 +41,7 @@ p{
 
 .cards{
     width: 20%;
-    height: 200px;
+    height: 150px;
     background-color: orange;
     clear: both;
     display: inline-block;
@@ -50,7 +50,7 @@ p{
     margin-bottom: 10%;
     text-align: center;
     vertical-align: middle;
-    line-height: 200px;
+    line-height: 150px;
     font-size: 80px;
 }
 
@@ -64,15 +64,26 @@ p{
 }
 #answer{
     margin-left: $mp2;
-    margin-right: $mp2;    
+    margin-right: $mp2;
+    position: relative;
+    input{  
+        vertical-align: middle;
+        height: 75px;
+        width: 120px;
+        font-size: 50px;
+        left: 0;
+        top: 0;
+        line-height: 50px;
+        text-align: center;
+    }    
+    button{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
 }
-#reveal{
-    font-size: 100px;
-    display:none;
-}
-#answer:hover #reveal{
-    display: block;
-}
+
+
 
 #hidden{
     position: absolute;
@@ -83,8 +94,5 @@ p{
         display: none;
 
     }
-    button{
-        
-        
-    }
+
 }
