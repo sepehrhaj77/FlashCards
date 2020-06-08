@@ -2,13 +2,13 @@ body, html {
   width: 100%;
   height: 100%;
   margin: 0px;
-  background-color: aqua;
+  background-color: #044949;
 }
 
 h1 {
   text-align: center;
   font-size: 60px;
-  color: pink;
+  color: #ec7589;
   text-shadow: 4px 4px black;
 }
 
