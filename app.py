@@ -14,6 +14,7 @@ def main():
     print(type(prev))
     print(type(number))
 
+    attempts = 0
     rando = random.randint(1,12) 
 
     if prev: 
